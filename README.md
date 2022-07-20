@@ -32,4 +32,4 @@ Com objetivo de demonstrar as minhas habilidades como desenvolvedor, desenvolvi 
 Este projeto é licenciado sob os termos da licença Apache 2.0.
 
 ---------
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Hamster/blob/main/src/img/BaseGitHub/f5.PNG?raw=true"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p5.PNG?raw=true"/>
