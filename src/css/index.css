@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'PT Serif', serif;
+}
+
+.introduction {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.introduction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 300px;
+    background-color: #ddbc9a;
+    background: url(../img/base/p2.png) #ddbc9a no-repeat;
+    background-position: right;
+}
+
+.introduction .container {
+    background: #ffffff;
+    text-align: left;
+    box-shadow: 0 17px 50px 0 rgb(0 0 0 / 19%), 0 12px 15px 0 rgb(0 0 0 / 24%);
+    padding: 70px 30px 30px 30px;
+    width: 90%;
+    height: 100%;
+    margin: 5px 5px 50px 5px;
+    z-index: 5;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.introduction .title {
+    z-index: 10;
+    justify-content: right;
+    text-align: left;
+    display: block;
+    margin: 70px auto 35px;
+    width: 90%;
+    transition: 0.5s;
+}
+
+.introduction .title h1 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.introduction .title p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.introduction .container .row {
+    width: 100%;
+    display: flex;
+}
+
+.introduction .container .row .col40 {
+    width: 40%;
+    margin-top: 45px;
+}
+
+.introduction .container .row .col60 {
+    width: 60%;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.introduction .container .col100 {
+    width: 100%;
+    margin: 10px;
+}
+
+.introduction .container .row .col40 h1:nth-child(1) {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.introduction .container .row .col40 h1:nth-child(2) {
+    font-size: 29px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.introduction .container .row .col40 h1:nth-child(3) {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.introduction .container .row .col40 h1:nth-child(4) {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+    color: #000000;
+    margin-top: 70px;
+}
+
+.introduction .container .row .col40 h1:nth-child(4) a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 5px;
+    text-transform: none;
+}
+
+.introduction .container .row .col60 h1:nth-child(1) {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: none;
+    text-align: right;
+}
+
+.introduction .container .row .col60 h1:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: none;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.introduction .container .row .inputField {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.introduction .container .row .inputField h1 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    float: left;
+    width: 100%;
+}
+
+.introduction .container .row .inputField .containerInput {
+    background: #ddbc9a;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.introduction .container .row .inputField .valueCurrency {
+    display: block;
+    width: 100%;
+    padding: 28px 0px;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    background: #ddbc9a;
+    transition: 0.3s ease;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.introduction .container .row .inputField .valueCurrency::placeholder {
+    color: #ffffff99;
+    font-weight: 400;
+}
+
+.introduction .container .row .inputField .valueCurrency:focus {
+    outline: none;
+}
+
+.introduction .container .row .inputField .valueCurrency::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.introduction .container .row .inputField .containerInput span {
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 20px;
+    color: #ffffff;
+    background: #ddbc9a;
+    border: none;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.introduction .container .dropdown,
+.introduction .container .dropdown2 {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    margin: 0 10px;
+}
+
+.introduction .container.dropdown2 {
+    margin-right: 0;
+}
+
+.introduction .container .dropdown h1,
+.introduction .container .dropdown2 h1 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+
+.introduction .container .dropdown::before,
+.introduction .container .dropdown2::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    top: 49.5px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-top: 2px solid #ddbc9a;
+    border-right: 2px solid #ddbc9a;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.introduction .container .dropdown.active::before,
+.introduction .container .dropdown2.active::before {
+    content: '';
+    top: 47px;
+    transform: rotate(-225deg);
+}
+
+.introduction .container .dropdown input,
+.introduction .container .dropdown2 input {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #ddbc9a;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.introduction .container .dropdown .option,
+.introduction .container .dropdown2 .option2 {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 32px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    z-index: 14;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.introduction .container .dropdown.active .option,
+.introduction .container .dropdown2.active .option2 {
+    display: block;
+}
+
+.introduction .container .dropdown .option div,
+.introduction .container .dropdown2 .option2 div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.introduction .container .dropdown .option div:hover,
+.introduction .container .dropdown2 .option2 div:hover {
+    background: #ddbc9a;
+    color: #ffffff;
+}
+
+.introduction .container .dropdown .option div ion-icon,
+.introduction .container .dropdown2 .option2 div ion-icon {
+    position: relative;
+    top: 4px;
+    font-size: 1.3em;
+    margin-right: 8px;
+}
+
+.introduction .container .iconeSwap {
+    position: relative;
+    cursor: pointer;
+}
+
+.introduction .container .iconeSwap .icon {
+    position: relative;
+    font-size: 35px;
+    background: #ddbc9a;
+    border-radius: 50%;
+    padding: 7px;
+    top: 35%;
+    color: #ffffff;
+    transition: 0.5s ease;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 5%;
+    background: #DDBC9A;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container .about {
+    width: 100%;
+}
+
+footer .container .fieldBTN {
+    margin-top: 20px;
+}
+
+footer .container .fieldBTN .btn {
+    background: #a08265;
+    color: #ffffff;
+    padding: 10px 29px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+footer .container .fieldBTN .btn:hover {
+    letter-spacing: 5px;
+}
+
+footer .container h1 {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: normal;
+}
+
+footer .container h1::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2.5px;
+    background: #a08265;
+}
+
+footer p {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    color: #ffffff;
+}
+
+.copyrightText {
+    width: 100%;
+    background: #a08265;
+    padding: 25px 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .introduction::before {
+        background: #ddbc9a no-repeat;
+        height: 250px;
+    }
+
+    .introduction .container {
+        padding: 50px 20px 30px 20px;
+    }
+
+    .introduction .container .row {
+        width: 100%;
+        display: block;
+    }
+
+    .introduction .container .row .col70 {
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+
+    .introduction .container .row .col30 {
+        width: 100%;
+    }
+
+    .introduction .container .dropdown,
+    .introduction .container .dropdown2 {
+        margin: 0px;
+        margin-top: 15px;
+    }
+
+    .introduction .container .dropdown2 {
+        margin-top: 0px;
+    }
+
+    .introduction .container .iconeSwap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 55px;
+        transform: rotateZ(90deg);
+    }
+
+    .introduction .container .row .col40 {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .introduction .container .row .col60 {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    footer {
+        padding: 50px 5% 40px 5%;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container .about {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    footer .container .fieldBTN .btn {
+        display: grid;
+        text-align: center;
+        width: 100%;
+    }
+
+    .copyrightText {
+        padding: 25px 25px 25px 25px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .introduction .title {
+        justify-content: flex-start;
+        text-align: left;
+        display: block;
+        margin: 60px auto 35px;
+        width: 95%;
+    }
+
+    .introduction .title h1 {
+        margin-right: 0px;
+        font-size: 25px;
+    }
+
+    .introduction .container {
+        width: 95%;
+        padding: 30px 10px 30px 10px;
+    }
+
+    .introduction .container .row .col40 h1:nth-child(4) {
+        margin-top: 45px;
+    }
+
+    .introduction .container .row .col60 h1:nth-child(1) {
+        text-align: left;
+    }
+
+    .introduction .container .row .col60 h1:nth-child(2) {
+        text-align: left;
+    }
+
+    .footer {
+        padding: 30px 2.5% 30px 2.5%;
+    }
+}
+
+.introduction .Animation {
+    background-color: #ffffff;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    width: 90%;
+    height: calc(100vh - 255px);
+    margin-top: 183px;
+    border-radius: 3px;
+}
+
+.introduction .Animation .loading {
+    animation: roda 1s infinite;
+    border: 6px solid #f1f1f1;
+    border-radius: 50%;
+    border-top-color: #a08265;
+    height: 60px;
+    width: 60px;
+}
+
+@keyframes roda {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@media (max-width: 991px) {
+    .introduction .Animation {
+        height: 100%;
+        margin-top: 190px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .introduction .Animation {
+        margin-top: 0px;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        height: 100vh;
+    }
+}

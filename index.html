@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/base/icone.png">
+    <title> Projeto Onça-Pintada </title>
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+    <section class="introduction">
+        <section id="Animation" class="Animation">
+            <div class="loading"></div>
+        </section>
+
+        <div class="title">
+            <h1> Conversor de Moeda Internacional. </h1>
+            <p> Bem-vindo à ferramenta de conversão de moedas internacionais!</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="inputField">
+                    <h1>Valor a ser convertido:</h1>
+                    <div class="containerInput">
+                        <span id="spanCurrency" for="InputValue" class="spanCurrency"> R$: </span>
+                        <input class="valueCurrency" type="number" placeholder="Informe um valor: " id="InputValue">
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <h1>de:</h1>
+                    <input type="text" class="textDropdown1" placeholder="selecione uma moeda" readonly>
+                    <div class="option">
+                        <div onclick="show('R$ - Real')">
+                            <ion-icon name="cash-outline"> </ion-icon> R$ - Real
+                        </div>
+                        <div onclick="show('$ - Dólar')">
+                            <ion-icon name="cash-outline"> </ion-icon> $ - Dólar
+                        </div>
+                        <div onclick="show('€ - Euro')">
+                            <ion-icon name="cash-outline"> </ion-icon> € - Euro
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconeSwap">
+                    <ion-icon name="code-outline" class="icon" onclick="exchangeValue();"></ion-icon>
+                </div>
+
+                <div class="dropdown2">
+                    <h1>para:</h1>
+                    <input type="text" class="textDropdown2" placeholder="selecione uma moeda" readonly>
+                    <div class="option2">
+                        <div onclick="show2('R$ - Real')">
+                            <ion-icon name="cash-outline"> </ion-icon> R$ - Real
+                        </div>
+                        <div onclick="show2('$ - Dólar')">
+                            <ion-icon name="cash-outline"> </ion-icon> $ - Dólar
+                        </div>
+                        <div onclick="show2('€ - Euro')">
+                            <ion-icon name="cash-outline"> </ion-icon> € - Euro
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col40">
+                    <h1 id="l1"></h1>
+                    <h1 id="l2"></h1>
+                    <h1 id="l3"></h1>
+                    <h1>Usamos a API: <a href="https://docs.awesomeapi.com.br/">docs.awesomeapi.com.br</a> </h1>
+                </div>
+                <div class="col60">
+                    <h1 id="l4"></h1>
+                    <h1 id="l5"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about">
+                <h1>Sobre o Projeto</h1>
+                <p> Olá! Meu nome é Victor Augusto e sou responsável por desenvolver esse projeto nomeado com Projeto
+                    Onça-Pintada(utilizei esse nome genérico para melhorar organização pessoal).</p>
+                <p> O objetivo é demonstrar as minhas habilidades como desenvolvedor. </p>
+                <p> Desenvolvi esse projeto que converte valores entre moedas.</p>
+                <p> Para isso, basta informar o valor que pretende converter e selecionar a moeda de origem e a moeda
+                    que pretende ser convertida. </p>
+                <p> As moedas utilizadas são: Dólar, Euros e Reais, no futuro pretendo adicionar mais moedas.</p>
+                <p> O projeto foi desenvolvido utilizando a API Awesome com HTML, CSS e JS (JavaScript).
+                </p>
+                <p> Então o que você achou desse projeto? </p>
+                <p> Mande a sua mensagem para esse e-mail: victor.augusto.desenvolvedor@gmail.com. </p>
+                <p> Caso deseje ver mais dos meus projetos, confiram o meu LinkedIn ou o meu GitHub. </p>
+                <p> Para mais informações de contatos e afins, o meu currículo se encontra a sua disposição logo a
+                    baixo. </p>
+                <div class="fieldBTN">
+                    <a class="btn" href="src/doc/Victor Augusto Rodrigues Gomes - Currículo.pdf"
+                        download="Victor Augusto Rodrigues Gomes - Currículo.pdf" type="application/pdf">
+                        Baixe meu Currículo</a>
+                    <a href=https://victor-augusto-dev.firebaseapp.com/ class="btn"> Meu Portfólio </a>
+                    <a href="https://linkedin.com/in/victor-augusto-dev" class="btn"> Meu LinkedIn </a>
+                    <a href="https://github.com/VictorAugustoRodriguesGomes" class="btn"> Meu GitHub </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2022-Atual. Victor Augusto. Todos os direitos reservados.</p>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="application/javascript" src="src/js/index.js"></script>
+
+</body>
+
+</html>
