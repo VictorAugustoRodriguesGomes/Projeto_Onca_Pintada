@@ -20,7 +20,7 @@ Com objetivo de demonstrar as minhas habilidades como desenvolvedor, desenvolvi 
 
 # Pré-requisitos
 #### Para poder ter aceso ao site clique no link abaixo: 
-1. [Projeto Onça-Pintada](https://projeto-hamster.web.app/).
+1. [Projeto Onça-Pintada](https://projeto-onca-pintada.web.app/).
 #### Para poder o alterar o projeto, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 1. [Git](https://git-scm.com),
 2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
