@@ -7,10 +7,10 @@ Com objetivo de demonstrar as minhas habilidades como desenvolvedor, desenvolvi 
 </br>
 
 <div align="center">
-<img src="" width="400"/>
-<img src="" width="400"/>
-<img src="" width="400"/>
-<img src="" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p1.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p2.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p3.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p4.PNG" width="400"/>
 
 </div>
 
